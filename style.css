@@ -1,0 +1,89 @@
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1px 400px 1px 400px;
+    border: solid 1px #d63939;
+}
+
+form {
+    background-color: hsla(0, 7%, 70%, 0.8);
+    ;
+    border-radius: 5px;
+}
+
+body {
+    background-image: linear-gradient(to right, #ff512f, #d63939, #dd2476);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1px 500px 1px 500px;
+}
+
+button:nth-child(2),
+button:nth-child(1) {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+#tel,
+#password-line,
+#login-line,
+#state,
+#email,
+#name {
+    margin: 5px;
+    padding: 5px;
+}
+
+input {
+    background-color: hsla(0, 7%, 70%, 0.8);
+    border: 1px solid #dd2476;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid #ff512f;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #ff512f;
+}
+
+@media (max-width: 1024px) {
+    .contatos {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+    .contatos {
+        margin: 1px;
+        width: 300px;
+        height: auto;
+    }
+    fieldset {
+        margin: 1px;
+        width: auto;
+        height: auto;
+    }
+    input {
+        width: 100px
+    }
+}
