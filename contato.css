@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dotted red;
+    margin: 0% 20% 0% 20%;
+    padding: 10px;
+}
