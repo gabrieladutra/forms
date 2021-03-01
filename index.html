@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="contatos">
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p id="nome">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" autocomplete="name" size="50">
+                </p>
+                <p id="telefone">
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="" id="tel" autocomplete="tel" data-mask="(00)00000-0000" class="form-control" title="Formato do telefone(XX)XXXXX-XXXX">
+                </p>
+                <p id="idEmail"><label for="email">E-mail: </label>
+                    <input type="email" name="" id="email" autocomplete="email" list="domains" size="50">
+                    <datalist id="domains">
+                        <option>@hotmail.com</option>
+                        <option>@gmail.com</option>
+                        <option>@outlook.com</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" name="" id="date">
+                </p>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Localização</legend>
+                <p>
+                    <label for="">Estado: </label>
+                    <input type="text" list="states" placeholder="Estado">
+                    <datalist id="states">
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Minas Gerais</option>
+                    <option>Paraná</option>
+                </datalist>
+                </p>
+                <p>
+                    <label for="cities">Cidade</label>
+                    <input type="search" name="cities" list="cities">
+                    <datalist id="cities">
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Curitiba</option>
+                        <option>Belo Horizonte</option>
+                        <option >Manaus</option>
+                        <option >São Luiz</option>
+                    </datalist>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Acesso</legend>
+                <p id="login-line">
+                    <label for="login">Login: </label>
+                    <input id="login" type="text" placeholder="Digite login ou email">
+                </p>
+
+                <p id="password-line">
+                    <label for="password">Senha: </label>
+                    <input id="password" type="password" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número, uma letra minúscula e uma maiúscula, e pelo menos 8 ou mais caracteres">
+                </p>
+                <p>
+                    <label for="photo">Foto</label>
+                    <input type="file" name="photo" id="photo" multiple>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Notificações</legend>
+                <p>
+                    <label for="notification">Desejo receber notificações: </label>
+                    <input type="checkbox" name="notification" id="notification" checked>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Pagamento</legend>
+                <p class="credit-line">
+                    <input id="credit" type="radio" name="payment" value="credit">
+                    <label for="credit">Cartão de Credito</label>
+                </p>
+                <p class="cash-line"> <input id="cash" type="radio" name="payment" value="cash">
+                    <label for="cash">Boleto Bancário</label>
+                </p>
+
+                <p class="pix-line"> <input id="pix" type="radio" name="payment" value="pix">
+                    <label for="pix">Pix</label>
+                </p>
+                <p>
+                    <label for="months">Selecione o periodo da assinatura</label>
+                    <select name="months" id="months">
+                       <option value="three">3 meses</option>
+                       <option value="six">6 meses</option>
+                       <option value="year">1 ano</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="marks">Selecione a quantidade de produtos</label>
+                    <input type="range" name="range" id="range" step="20" min="0" max="100" list="marks">
+                    <datalist id="marks">
+                        <option value="0"  label="0">0</option>
+                        <option value="20" label="20">20</option>
+                        <option value="40" label="40">40</option>
+                        <option value="60" label="60">60</option>
+                        <option value="80" label="80">80</option>
+                        <option value="100"label="100">100</option>
+                    </datalist>
+
+                </p>
+            </fieldset>
+
+    </div>
+    <div class="buttom">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </div>
+
+
+    </form>
+
+</body>
+
+</html>
